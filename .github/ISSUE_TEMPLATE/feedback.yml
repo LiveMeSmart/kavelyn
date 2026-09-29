@@ -1,0 +1,38 @@
+name: Kavelyn field feedback
+description: Tell us what happened when you tried Kavelyn on real development work.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What task did you try?
+      description: Please avoid sharing private code, credentials or confidential project information.
+    validations:
+      required: true
+  - type: textarea
+    id: useful
+    attributes:
+      label: What was useful?
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: Where did the workflow create friction or ambiguity?
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: What did you still have to invent yourself?
+  - type: dropdown
+    id: verification
+    attributes:
+      label: Would independent verification be useful in your workflow?
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure yet"
+    validations:
+      required: true
